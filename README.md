@@ -1,8 +1,8 @@
-\# VIGILX-AI
+ VIGILX-AI
 
 
 
-\## AI-Powered Intelligent Surveillance \& Threat Monitoring
+ AI-Powered Intelligent Surveillance \& Threat Monitoring
 
 
 
@@ -10,47 +10,47 @@ VIGILX-AI is an AI-powered intelligent surveillance platform designed for real-t
 
 
 
-The project combines \*\*Artificial Intelligence, Computer Vision, and Cybersecurity\*\* concepts to provide an operator-focused surveillance solution for modern security environments.
+The project combines Artificial Intelligence, Computer Vision, and Cybersecurity concepts to provide an operator-focused surveillance solution for modern security environments.
 
 
 
-\---
 
 
 
-\## 🚀 Key Capabilities
+
+ 🚀 Key Capabilities
 
 
 
-\* 🎥 Real-time surveillance monitoring
+ 🎥 Real-time surveillance monitoring
 
-\* 🤖 AI-powered person detection
+ 🤖 AI-powered person detection
 
-\* 🚗 Vehicle detection capabilities
+ 🚗 Vehicle detection capabilities
 
-\* 👥 Intelligent person counting
+ 👥 Intelligent person counting
 
-\* ⚠️ Threat-level assessment
+ ⚠️ Threat-level assessment
 
-\* 📝 Automated event logging
+ 📝 Automated event logging
 
-\* 📸 Evidence snapshot generation
+ 📸 Evidence snapshot generation
 
-\* 🔔 Security alert generation
+ 🔔 Security alert generation
 
-\* 📊 Monitoring and analytics dashboard
+ 📊 Monitoring and analytics dashboard
 
-\* 📡 Multi-camera surveillance architecture
+ 📡 Multi-camera surveillance architecture
 
-\* 🛡️ Cybersecurity-focused monitoring workflow
-
-
-
-\---
+ 🛡️ Cybersecurity-focused monitoring workflow
 
 
 
-\## 🧠 AI \& Computer Vision
+
+
+
+
+ 🧠 AI \& Computer Vision
 
 
 
@@ -62,149 +62,82 @@ The system is designed around an extensible detection pipeline that can support:
 
 
 
-\* Object/person detection
+ Object/person detection
 
-\* Real-time monitoring
+ Real-time monitoring
 
-\* Event classification
+ Event classification
 
-\* Threat severity assessment
+ Threat severity assessment
 
-\* Evidence generation
+ Evidence generation
 
-\* Automated security workflows
+ Automated security workflows
 
 
 
-\---
 
 
 
-\## 🖥️ System Architecture
 
+ 
 
 
-```text
+ 🛠️ Technology Highlights
 
-&#x20;                   ┌──────────────────────┐
 
-&#x20;                   │   Camera / Video     │
 
-&#x20;                   │     Input Source     │
+Artificial Intelligence \& Computer Vision
 
-&#x20;                   └──────────┬───────────┘
 
-&#x20;                              │
 
-&#x20;                              ▼
+ Python
 
-&#x20;                   ┌──────────────────────┐
+ YOLO-based object detection
 
-&#x20;                   │   Computer Vision    │
+ OpenCV
 
-&#x20;                   │   Detection Engine   │
+ Computer Vision pipelines
 
-&#x20;                   └──────────┬───────────┘
 
-&#x20;                              │
 
-&#x20;                              ▼
+Application \& Dashboard
 
-&#x20;                   ┌──────────────────────┐
 
-&#x20;                   │   Threat Analysis    │
 
-&#x20;                   │  \& Event Processing   │
+ Python-based monitoring components
 
-&#x20;                   └──────────┬───────────┘
+Web-based project showcase
 
-&#x20;                              │
+ Operator-focused dashboard architecture
 
-&#x20;               ┌──────────────┼──────────────┐
 
-&#x20;               ▼              ▼              ▼
 
-&#x20;       ┌────────────┐ ┌────────────┐ ┌────────────┐
+Security \& Monitoring
 
-&#x20;       │ Event Log  │ │  Evidence  │ │   Alerts   │
 
-&#x20;       └────────────┘ └────────────┘ └────────────┘
 
-&#x20;                              │
+ Threat assessment
 
-&#x20;                              ▼
+ Event logging
 
-&#x20;                   ┌──────────────────────┐
+ Evidence capture
 
-&#x20;                   │   Security Dashboard │
+ Security alert workflows
 
-&#x20;                   │   Operator Interface │
+ Multi-camera architecture
 
-&#x20;                   └──────────────────────┘
 
-```
 
 
 
-\---
 
 
+ 🎯 Project Objective
 
-\## 🛠️ Technology Highlights
 
 
-
-\*\*Artificial Intelligence \& Computer Vision\*\*
-
-
-
-\* Python
-
-\* YOLO-based object detection
-
-\* OpenCV
-
-\* Computer Vision pipelines
-
-
-
-\*\*Application \& Dashboard\*\*
-
-
-
-\* Python-based monitoring components
-
-\* Web-based project showcase
-
-\* Operator-focused dashboard architecture
-
-
-
-\*\*Security \& Monitoring\*\*
-
-
-
-\* Threat assessment
-
-\* Event logging
-
-\* Evidence capture
-
-\* Security alert workflows
-
-\* Multi-camera architecture
-
-
-
-\---
-
-
-
-\## 🎯 Project Objective
-
-
-
-The objective of VIGILX-AI is to explore how AI and computer vision can improve traditional surveillance systems by moving from passive video monitoring toward \*\*intelligent, event-driven security monitoring\*\*.
+The objective of VIGILX-AI is to explore how AI and computer vision can improve traditional surveillance systems by moving from passive video monitoring toward intelligent, event-driven security monitoring.
 
 
 
@@ -212,11 +145,11 @@ Instead of relying entirely on human operators to continuously observe multiple 
 
 
 
-\---
 
 
 
-\## 📸 Demo
+
+ 📸 Demo
 
 
 
@@ -224,15 +157,15 @@ A working demonstration and presentation materials are available upon request.
 
 
 
-> \*\*Note:\*\* The public repository is intentionally maintained as a project showcase. The complete implementation and private source code are not published here.
+Note: The public repository is intentionally maintained as a project showcase. The complete implementation and private source code are not published here.
 
 
 
-\---
 
 
 
-\## 🔐 Source Code \& Privacy
+
+ 🔐 Source Code \& Privacy
 
 
 
@@ -240,35 +173,35 @@ The implementation of VIGILX-AI is maintained privately.
 
 
 
-This public repository contains only the \*\*project showcase and selected public-facing materials\*\*. Private implementation files, AI models, development assets, and internal components are intentionally excluded.
+This public repository contains only the project showcase and selected public-facing materials. Private implementation files, AI models, development assets, and internal components are intentionally excluded.
 
 
 
-\---
 
 
 
-\## 📌 Project Status
+
+ 📌 Project Status
 
 
 
-\*\*Status:\*\* 🚧 Active Development
+Status: 🚧 Active Development
 
 
 
-VIGILX-AI is being developed as a practical \*\*AI + Computer Vision + Cybersecurity\*\* project with a focus on intelligent surveillance and proactive threat monitoring.
+VIGILX-AI is being developed as a practical AI + Computer Vision + Cybersecurity project with a focus on intelligent surveillance and proactive threat monitoring.
 
 
 
-\---
 
 
 
-\## 👨‍💻 Developer
+
+ 👨‍💻 Developer
 
 
 
-\### Hariom Dubey
+ Hariom Dubey
 
 
 
@@ -280,29 +213,29 @@ Interested in:
 
 
 
-\* Artificial Intelligence
+ Artificial Intelligence
 
-\* Machine Learning
+ Machine Learning
 
-\* Computer Vision
+ Computer Vision
 
-\* Cybersecurity
+ Cybersecurity
 
-\* Ethical Hacking
+ Ethical Hacking
 
-\* Intelligent Security Systems
-
-
-
-\---
+ Intelligent Security Systems
 
 
 
-\## ⭐ Project Vision
 
 
 
-> \*\*From passive surveillance to intelligent security.\*\*
+
+ ⭐ Project Vision
+
+
+
+From passive surveillance to intelligent security.
 
 
 
@@ -310,11 +243,11 @@ VIGILX-AI aims to demonstrate how AI-driven monitoring can help security teams d
 
 
 
-\---
 
 
 
-\## 📄 License
+
+ 📄 License
 
 
 
