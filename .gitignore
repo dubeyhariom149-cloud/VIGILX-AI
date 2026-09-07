@@ -1,0 +1,29 @@
+# VIGILX-AI PRIVATE SOURCE
+ai/
+dashboard.py
+dashboard_FINAL_WORKING.py
+dashboard_backup.py
+dashboard_backup_final.py
+
+# Frontend source
+src/
+package.json
+package-lock.json
+
+# Local/runtime
+venv/
+node_modules/
+__pycache__/
+.streamlit/
+
+# Data
+events/
+events.csv
+events.json
+
+# Models/videos
+yolo11n.pt
+videos/
+
+# Python cache
+*.pyc
