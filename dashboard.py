@@ -1,4 +1,4 @@
-import os
+﻿import os
 import json
 import csv
 import time
@@ -62,7 +62,7 @@ PHONE_ID = 67
 
 st.set_page_config(
     page_title="VIGILX-AI",
-    page_icon="🛡️",
+    page_icon="ðŸ›¡ï¸",
     layout="wide",
 )
 
@@ -316,11 +316,8 @@ def add_event(
 
 def get_threat(persons, vehicles, phones):
 
-    if persons >= 6:
-        return "HIGH"
-
     if persons >= 3:
-        return "MEDIUM"
+        return "HIGH"
 
     if persons > 0 or vehicles > 0 or phones > 0:
         return "LOW"
@@ -403,7 +400,7 @@ def send_email_alert(event):
     try:
         message = EmailMessage()
         message["Subject"] = (
-            f"🚨 VIGILX-AI HIGH THREAT ALERT - "
+            f"ðŸš¨ VIGILX-AI HIGH THREAT ALERT - "
             f"{event.get('event', 'INCIDENT')}"
         )
         message["From"] = cfg["user"]
@@ -915,7 +912,7 @@ def login_page():
         </div>
 
         <div class="login-title">
-            🛡️ VIGILX-AI
+            ðŸ›¡ï¸ VIGILX-AI
         </div>
 
         <div class="login-subtitle">
@@ -923,7 +920,7 @@ def login_page():
         </div>
 
         <div class="login-security">
-            🔐 Secure operator authentication required.
+            ðŸ” Secure operator authentication required.
         </div>
         """,
         unsafe_allow_html=True,
@@ -950,7 +947,7 @@ def render_sidebar():
 
     with st.sidebar:
 
-        st.title("🛡️ VIGILX-AI")
+        st.title("ðŸ›¡ï¸ VIGILX-AI")
 
         st.caption(
             "AI-Powered Intelligent Video Surveillance and Monitoring System"
@@ -974,7 +971,7 @@ def render_sidebar():
         st.divider()
 
         st.subheader(
-            "📡 Camera Source"
+            "ðŸ“¡ Camera Source"
         )
 
         source = st.selectbox(
@@ -996,7 +993,7 @@ def render_sidebar():
         if source == "Local Video Testing":
 
             uploaded = st.file_uploader(
-                "ðŸ“¹ Upload CCTV Video",
+                "Ã°Å¸â€œÂ¹ Upload CCTV Video",
                 type=[
                     "mp4",
                     "avi",
@@ -1078,7 +1075,7 @@ def render_sidebar():
                     current_selected = dataset_files[0]
 
                 selected_file = st.selectbox(
-                    "ðŸ“ Select Dataset CCTV Clip",
+                    "Ã°Å¸â€œÂ Select Dataset CCTV Clip",
                     dataset_files,
                     index=dataset_files.index(current_selected),
                     key="dataset_clip_selector",
@@ -1108,7 +1105,7 @@ def render_sidebar():
         if not st.session_state.monitoring:
 
             if st.button(
-                "â–¶ START MONITORING",
+                "Ã¢â€“Â¶ START MONITORING",
                 type="primary",
                 use_container_width=True,
             ):
@@ -1130,7 +1127,7 @@ def render_sidebar():
         else:
 
             if st.button(
-                "â¹ STOP MONITORING",
+                "Ã¢ÂÂ¹ STOP MONITORING",
                 use_container_width=True,
             ):
 
@@ -1159,7 +1156,7 @@ def render_sidebar():
 
 def header():
 
-    st.title("🛡️ VIGILX-AI")
+    st.title("ðŸ›¡ï¸ VIGILX-AI")
 
     st.subheader(
         "AI-Powered Intelligent Video Surveillance and Monitoring System"
@@ -1171,19 +1168,19 @@ def header():
 
         if st.session_state.monitoring:
             st.success(
-                "● SYSTEM ACTIVE"
+                "â— SYSTEM ACTIVE"
             )
         else:
             st.info(
-                "● SYSTEM STANDBY"
+                "â— SYSTEM STANDBY"
             )
 
     with b:
 
         st.write(
-            "📅 "
+            "ðŸ“… "
             + datetime.now().strftime(
-                "%d %b %Y • %H:%M:%S"
+                "%d %b %Y â€¢ %H:%M:%S"
             )
         )
 
@@ -1210,7 +1207,7 @@ def kpis():
         st.metric(
             "CAMERA STATUS",
             R["camera"],
-            "CAM 01 • PRIMARY",
+            "CAM 01 â€¢ PRIMARY",
         )
 
     with b:
@@ -1249,7 +1246,7 @@ def kpis():
 def camera_grid():
 
     st.subheader(
-        "📡 LIVE THREAT MONITORING • CAMERA GRID"
+        "ðŸ“¡ LIVE THREAT MONITORING â€¢ CAMERA GRID"
     )
 
     a, b, c = st.columns(3)
@@ -1257,7 +1254,7 @@ def camera_grid():
     with a:
 
         st.markdown(
-            "### CAM 01 • PRIMARY"
+            "### CAM 01 â€¢ PRIMARY"
         )
 
         st.write(
@@ -1279,7 +1276,7 @@ def camera_grid():
         else:
 
             st.info(
-                "📷 CAMERA STANDBY\n\n"
+                "ðŸ“· CAMERA STANDBY\n\n"
                 "Upload/select a source and press "
                 "START MONITORING."
             )
@@ -1291,15 +1288,15 @@ def camera_grid():
     with b:
 
         st.markdown(
-            "### CAM 02 • SECONDARY"
+            "### CAM 02 â€¢ SECONDARY"
         )
 
         st.warning(
-            "● STANDBY"
+            "â— STANDBY"
         )
 
         st.info(
-            "📡 RTSP / IP READY\n\n"
+            "ðŸ“¡ RTSP / IP READY\n\n"
             "Government / Police CCTV architecture\n"
             "Source configurable"
         )
@@ -1311,15 +1308,15 @@ def camera_grid():
     with c:
 
         st.markdown(
-            "### CAM 03 • SECONDARY"
+            "### CAM 03 â€¢ SECONDARY"
         )
 
         st.warning(
-            "● STANDBY"
+            "â— STANDBY"
         )
 
         st.info(
-            "📡 RTSP / IP READY\n\n"
+            "ðŸ“¡ RTSP / IP READY\n\n"
             "Government / Police CCTV architecture\n"
             "Source configurable"
         )
@@ -1336,7 +1333,7 @@ def camera_grid():
 def intelligence():
 
     st.subheader(
-        "🧠 AI INTELLIGENCE • DETECTION • RESPONSE"
+        "ðŸ§  AI INTELLIGENCE â€¢ DETECTION â€¢ RESPONSE"
     )
 
     a, b, c = st.columns(3)
@@ -1439,7 +1436,7 @@ def intelligence():
 def response_center():
 
     st.subheader(
-        "🚨 ALERT & RESPONSE CENTER"
+        "ðŸš¨ ALERT & RESPONSE CENTER"
     )
 
     events = load_events()
@@ -1449,7 +1446,7 @@ def response_center():
     with a:
 
         st.info(
-            "📧 EMAIL ALERT SYSTEM"
+            "ðŸ“§ EMAIL ALERT SYSTEM"
         )
 
         if os.getenv(
@@ -1468,13 +1465,13 @@ def response_center():
             )
 
         st.caption(
-            "HIGH threat â†’ automatic email"
+            "HIGH threat Ã¢â€ â€™ automatic email"
         )
 
     with b:
 
         st.success(
-            "💾 EVIDENCE STORAGE"
+            "ðŸ’¾ EVIDENCE STORAGE"
         )
 
         st.metric(
@@ -1485,7 +1482,7 @@ def response_center():
     with c:
 
         st.success(
-            "🗄️ EVENT DATABASE"
+            "ðŸ—„ï¸ EVENT DATABASE"
         )
 
         st.metric(
@@ -1501,7 +1498,7 @@ def response_center():
 def timeline():
 
     st.subheader(
-        "📋 INCIDENT TIMELINE"
+        "ðŸ“‹ INCIDENT TIMELINE"
     )
 
     events = load_events()
@@ -1517,8 +1514,8 @@ def timeline():
     for event in reversed(events[-8:]):
 
         with st.expander(
-            f"{event.get('timestamp', '')} • "
-            f"{event.get('event', '')} • "
+            f"{event.get('timestamp', '')} â€¢ "
+            f"{event.get('event', '')} â€¢ "
             f"{event.get('severity', '')}"
         ):
 
@@ -1557,7 +1554,7 @@ def command_center():
     if not st.session_state.monitoring:
 
         st.info(
-            "🧪 Local CCTV/video source is ready. "
+            "ðŸ§ª Local CCTV/video source is ready. "
             "Press START MONITORING to begin AI analysis."
         )
 
@@ -1582,9 +1579,9 @@ def command_center():
     st.divider()
 
     st.caption(
-        f"VIGILX-AI • AI-Powered Intelligent Video Surveillance and Monitoring System • "
+        f"VIGILX-AI â€¢ AI-Powered Intelligent Video Surveillance and Monitoring System â€¢ "
         f"AI-POWERED INTELLIGENT SURVEILLANCE & "
-        f"SECURITY SYSTEM • {OWNER} • v{VERSION}"
+        f"SECURITY SYSTEM â€¢ {OWNER} â€¢ v{VERSION}"
     )
 
 
@@ -1594,7 +1591,7 @@ def command_center():
 
 def event_history():
 
-    st.title("📋 Event History")
+    st.title("ðŸ“‹ Event History")
 
     events = load_events()
 
@@ -1606,7 +1603,7 @@ def event_history():
     for event in reversed(events):
 
         with st.expander(
-            f"{event.get('timestamp', '')} • "
+            f"{event.get('timestamp', '')} â€¢ "
             f"{event.get('event', '')}"
         ):
 
@@ -1640,7 +1637,7 @@ def event_history():
 
 def evidence_page():
 
-    st.title("💾 Evidence Storage")
+    st.title("ðŸ’¾ Evidence Storage")
 
     files = sorted(
         EVENT_DIR.glob(
@@ -1681,7 +1678,7 @@ def evidence_page():
 
 def analytics_page():
 
-    st.title("ðŸ“Š Surveillance Analytics")
+    st.title("Ã°Å¸â€œÅ  Surveillance Analytics")
 
     events = load_events()
 
@@ -1750,7 +1747,7 @@ def analytics_page():
 
 def settings_page():
 
-    st.title("âš™ï¸ Detection Settings")
+    st.title("Ã¢Å¡â„¢Ã¯Â¸Â Detection Settings")
 
     c1, c2, c3 = st.columns(3)
     with c1:
@@ -1770,13 +1767,13 @@ def settings_page():
 
     st.divider()
 
-    st.markdown("### ðŸŽ¯ Monitored Target Classes")
-    st.write("• **Person** — COCO ID 0 (Threshold: 0.70)")
-    st.write("• **Car** — COCO ID 2 (Threshold: 0.50)")
-    st.write("• **Motorcycle** — COCO ID 3 (Threshold: 0.50)")
-    st.write("• **Bus** — COCO ID 5 (Threshold: 0.50)")
-    st.write("• **Truck** — COCO ID 7 (Threshold: 0.50)")
-    st.write("• **Cell Phone** — COCO ID 67 (Threshold: 0.65)")
+    st.markdown("### Ã°Å¸Å½Â¯ Monitored Target Classes")
+    st.write("â€¢ **Person** â€” COCO ID 0 (Threshold: 0.70)")
+    st.write("â€¢ **Car** â€” COCO ID 2 (Threshold: 0.50)")
+    st.write("â€¢ **Motorcycle** â€” COCO ID 3 (Threshold: 0.50)")
+    st.write("â€¢ **Bus** â€” COCO ID 5 (Threshold: 0.50)")
+    st.write("â€¢ **Truck** â€” COCO ID 7 (Threshold: 0.50)")
+    st.write("â€¢ **Cell Phone** â€” COCO ID 67 (Threshold: 0.65)")
 
 
 # ============================================================
@@ -1785,14 +1782,14 @@ def settings_page():
 
 def email_page():
 
-    st.title("📧 Email Alert System")
+    st.title("ðŸ“§ Email Alert System")
 
     cfg = get_email_config()
 
     if cfg["configured"]:
 
         st.success(
-            "● SMTP CONFIGURED & READY"
+            "â— SMTP CONFIGURED & READY"
         )
 
         st.write(
@@ -1808,7 +1805,7 @@ def email_page():
             "HIGH threat incidents automatically trigger real-time email notifications with snapshot evidence."
         )
 
-        if st.button("ðŸ“¤ SEND TEST ALERT", use_container_width=True):
+        if st.button("Ã°Å¸â€œÂ¤ SEND TEST ALERT", use_container_width=True):
             test_evt = {
                 "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 "event": "TEST_ALERT",
@@ -1828,7 +1825,7 @@ def email_page():
     else:
 
         st.warning(
-            "● SMTP NOT CONFIGURED"
+            "â— SMTP NOT CONFIGURED"
         )
 
         st.code("""
@@ -1851,7 +1848,7 @@ $env:VIGILX_ALERT_TO="receiver@gmail.com"
 
 def health_page():
 
-    st.title("ðŸ–¥ï¸ System Health")
+    st.title("Ã°Å¸â€“Â¥Ã¯Â¸Â System Health")
 
     st.write(
         f"Application: **{APP_NAME}**"
@@ -1942,5 +1939,6 @@ if (
 
     time.sleep(0.05)
     st.rerun()
+
 
 
