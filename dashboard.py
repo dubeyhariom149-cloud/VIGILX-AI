@@ -1,4 +1,4 @@
-﻿import os
+import os
 import json
 import csv
 import time
@@ -62,7 +62,7 @@ PHONE_ID = 67
 
 st.set_page_config(
     page_title="VIGILX-AI",
-    page_icon="ðŸ›¡ï¸",
+    page_icon="🛡️",
     layout="wide",
 )
 
@@ -400,7 +400,7 @@ def send_email_alert(event):
     try:
         message = EmailMessage()
         message["Subject"] = (
-            f"ðŸš¨ VIGILX-AI HIGH THREAT ALERT - "
+            f"🛡️VIGILX-AI HIGH THREAT ALERT - "
             f"{event.get('event', 'INCIDENT')}"
         )
         message["From"] = cfg["user"]
@@ -912,7 +912,7 @@ def login_page():
         </div>
 
         <div class="login-title">
-            ðŸ›¡ï¸ VIGILX-AI
+            🛡️ VIGILX-AI
         </div>
 
         <div class="login-subtitle">
@@ -920,7 +920,7 @@ def login_page():
         </div>
 
         <div class="login-security">
-            ðŸ” Secure operator authentication required.
+            🔐Secure operator authentication required.
         </div>
         """,
         unsafe_allow_html=True,
@@ -947,7 +947,7 @@ def render_sidebar():
 
     with st.sidebar:
 
-        st.title("ðŸ›¡ï¸ VIGILX-AI")
+        st.title("🛡️ VIGILX-AI")
 
         st.caption(
             "AI-Powered Intelligent Video Surveillance and Monitoring System"
@@ -1156,7 +1156,7 @@ def render_sidebar():
 
 def header():
 
-    st.title("ðŸ›¡ï¸ VIGILX-AI")
+    st.title("🛡️ VIGILX-AI")
 
     st.subheader(
         "AI-Powered Intelligent Video Surveillance and Monitoring System"
