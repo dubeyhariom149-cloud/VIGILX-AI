@@ -3,7 +3,4 @@ ultralytics
 numpy
 Pillow
 opencv-python-headless
-git add requirements.txt
-git commit -m "Fix missing python-dotenv dependency"
-git push origin vigilx-deploy
 python-dotenv
